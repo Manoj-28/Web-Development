@@ -56,19 +56,21 @@ li a{
 .btn{
     padding: 6px 15px;
     margin: 5px;
+    cursor: pointer;
 }
 
 /* Home Section */
 #Home{
     display: flex;
+    height: 35rem;
 }
 #Home::before{
     content: "";
     position: absolute;
-    top: 75px;
+    top: 0px;
     left: 0px;
-    background: url("../img/bg2.jpeg") no-repeat center center/cover;
-    height: 100%;
+    background: url("../img/bg2.jpeg") no-repeat;
+    height: 88%;
     width: 100%;
     z-index: -1;
 }
@@ -86,4 +88,33 @@ li a{
     margin: 10px;
     padding: 10px 20px;
     background-color: deepskyblue;
+    cursor: pointer;
+}
+
+/*Shop by category */
+
+#category{
+    position: relative;
+}
+#items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    border: 2px solid black;
+    text-align: center;
+    margin: 40px;
+}
+.box img{
+    height: 393px;
+    width: 300px;
+}
+
+.h-secondary{
+    font-size: 40px;
+}
+
+.center{
+    text-align: center;
 }
